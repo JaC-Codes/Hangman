@@ -30,7 +30,6 @@ public class Hangman {
         HangmanHandler handler = new HangmanHandler();
         int lives = 6;
 
-        System.out.println(answerWord);
         System.out.println("The word length is " + answerWord.length());
         while (lives != 0) {
             System.out.println();
@@ -43,7 +42,8 @@ public class Hangman {
                 System.out.println("Wrong! " + lives + " lives remain.");
             }
             if (lives == 0) {
-                System.exit(0);
+                System.out.println("The word was " + answerWord);
+                break;
             }
             if (Arrays.equals(replacer, answerWord.toCharArray())) {
                 System.out.println();
