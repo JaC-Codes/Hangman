@@ -21,13 +21,6 @@ public class HangmanHandler {
             System.out.print(" " + replacer[i]);
         }
     }
-
-    public void wrongAnswer(String answerWord, char userGuess, int lives) {
-        if (userGuess != answerWord.charAt(0)) {
-            lives--;
-            System.out.println("Wrong! " + lives + " lives remain.");
-        }
-    }
 }
 
 
